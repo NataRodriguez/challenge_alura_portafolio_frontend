@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <title>Portafolio Natalia Rodriguez</title>
 </head>
 
 <body>
@@ -122,53 +122,77 @@
         <h2 class="formacion__titulo">Formación académica</h2>
         <ul class="formacion__lista">
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
+                <img class="formacion__icono" src="assets/ucsh_logo.png" alt="UCSH">
                 <div>
-                    <h3 class="formacion__nombre">Análisis de datos</h3>
-                    <p class="formacion__detalle">2018 - UFPR</p>
+                    <h3 class="formacion__nombre">Pedagogía en Inglés</h3>
+                    <p class="formacion__detalle">2018 - UCSH</p>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <img class="formacion__icono" src="assets/duocuc_logo.png" alt="DuocUc">
+                <div>
+                    <h3 class="formacion__nombre">Analista Programador Computacional</h3>
+                    <p class="formacion__detalle">2024 - Duoc UC</p>
                 </div>
             </li>
             <li class="formacion__elemento">
                 <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
                 <div>
-                    <h3 class="formacion__nombre">Formación en UX Design</h3>
-                    <p class="formacion__detalle">2019 - Alura</p>
-                </div>
-            </li>
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
-                <div>
-                    <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                    <p class="formacion__detalle">En curso - UFRJ</p>
+                    <h3 class="formacion__nombre">Formación Front End</h3>
+                    <p class="formacion__detalle">En curso - Alura</p>
                 </div>
             </li>
         </ul>
     </section>
 
-    <!-- Sección de Proyectos -->
-    <section class="proyectos" id="proyectos">
-        <h2 class="proyectos__titulo">Experiencia Profesional</h2>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+  <!-- Sección de Proyectos -->
+<section class="proyectos" id="proyectos">
+    <h2 class="proyectos__titulo">Experiencia Profesional</h2>
+
+    <div class="proyecto">
+        <img src="url_de_la_imagen" alt="Descripción de la imagen" class="proyecto__imagen">
+        <div class="proyecto__contenido">
+            <h3 class="proyecto__nombre">Encriptador de texto</h3>
+            <p class="proyecto__descripcion">Challenge Alura Codificador</p>
+            <div class="proyecto__botones">
+                <a href="url_repositorio" class="proyecto__boton">Repositorio</a>
+                <a href="url_demo" class="proyecto__boton proyecto__boton--primario">Ver demo</a>
+            </div>
         </div>
-        <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+    </div>
+
+    <div class="proyecto">
+        <img src="url_de_la_imagen" alt="Descripción de la imagen" class="proyecto__imagen">
+        <div class="proyecto__contenido">
+            <h3 class="proyecto__nombre">Portafolio de título DUOC UC 2024</h3>
+            <p class="proyecto__descripcion">Proyecto Portafolio de título DUOC UC 2024 Gestión Integral de Reservas</p>
+            <div class="proyecto__botones">
+                <a href="url_repositorio" class="proyecto__boton">Repositorio</a>
+                <a href="url_demo" class="proyecto__boton proyecto__boton--primario">Ver demo</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
-        <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <input class="contacto__campo" type="text" placeholder="Asunto">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
-        </form>
-    </section>
+        <img class="contacto__imagen" src="url_de_la_imagen" alt="Texto alternativo">
+        <div class="contacto__contenido">
+            <h2 class="contacto__titulo">Contacto</h2>
+            <p class="contacto__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <form class="contacto__formulario">
+                <input class="contacto__campo" type="text" placeholder="Nombre">
+                <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+                <input class="contacto__campo" type="text" placeholder="Asunto">
+                <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+                <button class="contacto__boton" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>    
 </body>
+<footer class="footer">
+    <p>Desarrollado por Natalia Rodriguez 2024</p>
+</footer>
     <script src="script.js"></script>
 </html>
