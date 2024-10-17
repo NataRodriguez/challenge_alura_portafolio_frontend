@@ -166,15 +166,6 @@ a {
     margin-bottom: 1.5rem;
 }
 
-.sobre-mi__firma {
-    display: block;
-    margin-top: 2rem;
-    margin-left: 0; /* Firma alineada a la izquierda */
-    max-width: 120px; /* Ajusta el tamaño de la firma */
-    height: auto; /* Mantén la proporción de la firma */
-}
-
-
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
 .habilidades {
@@ -226,23 +217,23 @@ a {
     color: #333; /* Color del texto */
 }
 
-/*------------------------------ Sección de Aficiones --------------------------------*/
+/* ------------------------------ Sección de Hobbies --------------------------------*/
 
-.aficiones {
+.hobbies {
     max-width: 1200px; /* Limita el ancho máximo */
     margin: 0 auto; /* Centra la sección */
     padding: 3rem 2rem; /* Espaciado interno */
     text-align: center; /* Centra los textos */
 }
 
-.aficiones__titulo {
+.hobbies__titulo {
     font-size: 2rem;
     font-weight: 700;
     color: #333; /* Color del título */
     margin-bottom: 2rem;
 }
 
-.aficiones__lista {
+.hobbies__lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cuadrícula flexible */
     gap: 2rem; /* Espacio entre los elementos */
@@ -250,7 +241,7 @@ a {
     padding: 0;
 }
 
-.aficiones__elemento {
+.hobbies__elemento {
     background-color: #fff;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -262,17 +253,17 @@ a {
     transition: transform 0.3s ease-in-out;
 }
 
-.aficiones__elemento:hover {
+.hobbies__elemento:hover {
     transform: translateY(-10px); /* Efecto de elevación al hacer hover */
 }
 
-.aficiones__icono {
+.hobbies__icono {
     width: 60px;
     height: 60px;
     margin-bottom: 1rem;
 }
 
-.aficiones__nombre {
+.hobbies__nombre {
     font-size: 1rem;
     font-weight: 500;
     color: #333; /* Color del texto */
