@@ -409,28 +409,31 @@ a {
 }
 
 
-/*------------------------------ Sección de Contacto ---------------------------------*/
+/* ------------------------------ Sección de Contacto Ajustada ------------------------------*/
 
 .contacto {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Alinea verticalmente */
+    gap: 4rem; /* Espacio entre la imagen y el formulario */
     padding: 3rem 2rem;
     background-color: #eaf3fc;
     border-radius: 10px;
+    width: 100%;
+
 }
 
 .contacto__imagen {
-    max-width: 400px;
-    margin-right: 2rem;
+    max-width: 600px;
+    height: 650px;
+    object-fit: cover;
+    margin-top: 0;
 }
 
 .contacto__contenido {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    width: 100%;
+    width: 600px; /* Tamaño del formulario */
 }
 
 .contacto__titulo {
@@ -449,11 +452,11 @@ a {
 .contacto__formulario {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .contacto__campo {
-    padding: 1rem;
+    padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
@@ -461,12 +464,12 @@ a {
 }
 
 .contacto__campo--textarea {
-    height: 150px;
+    height: 120px;
     resize: none;
 }
 
 .contacto__boton {
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -483,17 +486,18 @@ a {
 /* Diseño responsivo */
 @media (max-width: 768px) {
     .contacto {
-        flex-direction: column;
+        flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
         text-align: center;
+        height: auto; /* Asegura que no ocupe el alto completo en pantallas pequeñas */
     }
 
     .contacto__imagen {
-        margin-right: 0;
+        max-width: 100%; /* Ajusta el ancho de la imagen en pantallas pequeñas */
         margin-bottom: 2rem;
     }
 
     .contacto__contenido {
-        max-width: 100%;
+        width: 100%; /* Hace que el formulario ocupe el 100% del ancho en pantallas pequeñas */
     }
 }
 
