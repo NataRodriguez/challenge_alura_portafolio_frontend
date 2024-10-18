@@ -1,9 +1,7 @@
-/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
-*/
 :root {
     --color-de-fondo: #F5F5F5;
-    --color-de-fondo-menu: #ffffff;
-    --color-de-link: #000000;
+    --color-de-fondo-menu: #FFC7C7;
+    --color-de-link: #7469B6;
 }
 
 body {
@@ -64,8 +62,36 @@ a {
 .navegacion__elemento a {
     font-size: 0.9rem;
     text-decoration: none;
-    color: var(--color-texto);
+    color: var(--color-de-link);
     transition: color 0.3s;
+}
+
+/* Hover en pantallas grandes */
+@media (min-width: 769px) {
+    .navegacion__elemento a:hover {
+        background-color: var(--color-de-link); /* Cambia el color de fondo */
+        color: #fff; /* Cambia el color del texto al pasar el cursor */
+        border-radius: 5px; /* Añade bordes redondeados */
+        padding: 0.5rem 1rem; /* Ajusta el relleno interno */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    }
+}
+
+/* Diseño responsivo para ocultar secciones en tablets y móviles */
+@media (max-width: 768px) {
+    .navegacion__elemento:not(:last-child) {
+        display: none; /* Oculta todos los elementos del menú menos el último (email) */
+    }
+
+    .navegacion__elemento:last-child {
+        display: block;
+        text-align: center;
+    }
+
+    .cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* ------------------------------ Sección Presentación ------------------------------*/
@@ -76,7 +102,7 @@ a {
     align-items: center;
     justify-content: center; /* Mantiene el centro horizontal */
     padding: 2rem;
-    background-color: #f5f5f5; /* Color de fondo */
+    background-color: #FFE2E2; /* Color de fondo */
     gap: 2rem; /* Espacio entre la imagen y el texto */
 }
 
@@ -112,6 +138,7 @@ a {
     padding: 0;
     display: flex;
     gap: 1.5rem; /* Espacio entre los elementos de redes sociales */
+    flex-wrap: wrap;
 }
 
 .redes__img a {
@@ -146,7 +173,7 @@ a {
 .sobre-mi {
     margin: 0 auto; /* Centra la sección en la página */
     padding: 3rem 4rem; /* Espaciado interno */
-    background-color: #eaf3fc; /* Color de fondo suave */
+    background-color: #F6F6F6; /* Color de fondo suave */
     border-radius: 10px; /* Bordes redondeados para un estilo suave */
     text-align: left; /* Alineación del texto a la izquierda */
 }
@@ -172,6 +199,7 @@ a {
     margin: 0 auto; /* Centra la sección */
     padding: 3rem 2rem; /* Espaciado interno */
     text-align: center; /* Centra los textos */
+    background-color: #FFE2E2;
 }
 
 .habilidades__titulo {
@@ -220,10 +248,10 @@ a {
 /* ------------------------------ Sección de Hobbies --------------------------------*/
 
 .hobbies {
-    max-width: 1200px; /* Limita el ancho máximo */
     margin: 0 auto; /* Centra la sección */
     padding: 3rem 2rem; /* Espaciado interno */
     text-align: center; /* Centra los textos */
+    background-color: #F6F6F6;
 }
 
 .hobbies__titulo {
@@ -274,7 +302,7 @@ a {
 .formacion {
     margin: 0 auto; /* Centra la sección */
     padding: 3rem 2rem; /* Espaciado interno */
-    background-color: #eaf3fc; /* Fondo suave */
+    background-color: #FFE2E2; /* Fondo suave */
     border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -340,7 +368,7 @@ a {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    background-color: #f5f5f5;
+    background-color: #fff;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -350,6 +378,7 @@ a {
     max-width: 300px;
     margin-right: 2rem;
     border-radius: 8px;
+    display: flex;
 }
 
 .proyecto__contenido {
@@ -416,8 +445,7 @@ a {
     justify-content: center; /* Centra horizontalmente el contenido */
     align-items: center; /* Alinea verticalmente */
     gap: 4rem; /* Espacio entre la imagen y el formulario */
-    padding: 3rem 2rem;
-    background-color: #eaf3fc;
+    background-color: #FFE2E2;
     border-radius: 10px;
     width: 100%;
 
@@ -460,7 +488,6 @@ a {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    width: 100%;
 }
 
 .contacto__campo--textarea {
@@ -507,10 +534,9 @@ a {
     display: flex;
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center;     /* Centra el contenido verticalmente */
-    padding: 1rem;
-    background-color: #f0f4f8;
+    background-color: #8785A2;
     font-size: 1rem;
-    color: #333;
+    color: #fff;
     width: 100%;
     text-align: center;
 }
